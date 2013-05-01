@@ -2,10 +2,18 @@
   margin: 50px auto 0;
   width: 600px;
   clear: both;
-  border: 1px solid;
 }
 th {
   text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
 
 
@@ -16,6 +24,10 @@ th {
 
 #title {
   float: left;
+
+}
+#title a{
+  text-decoration: none
 }
 #title h1 {
   margin: 0;
@@ -54,4 +66,72 @@ th {
 }
 .post-info{
   padding-bottom: 15px;
+}
+
+/* Profile Styling */ 
+
+.column-wrapper{
+  width: inherit;
+}
+
+.column-wrapper ul {
+  padding: 0;
+  list-style: none;
+}
+.column-wrapper li{
+  padding-bottom: 5px;
+}
+.column-wrapper a{
+  text-decoration: none;
+  color: blue;
+}
+
+.post-column{
+  width: 50%;
+  float: left;
+}
+
+.comment-column{
+  width: 50%;
+  float: left;
+}
+
+.truncate {
+  width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.user-email {
+  color: #777;
+}
+
+/* new post */
+.new-post{
+  background-color: #222;
+  border-radius: 4px;
+  padding: 10px 0 10px 0;
+  /*display: none;*/
+
+}
+
+.new-post-form{
+  margin: 0 auto;
+}
+
+.form-title{
+  margin: 0 auto;
+  display: block;
+  width: 300px;
+}
+
+.form-body{
+  margin: 10px auto;
+  display: block;
+  width: 300px;
+}
+.form-submit{
+  margin: 0 auto;
+  display: block;
 }
