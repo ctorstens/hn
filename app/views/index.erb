@@ -1,0 +1,6 @@
+<div class="container">
+  <h1>Hello</h1>
+  <% @posts.each_with_index do |post, index| %>
+    <%=index+1%>.<%= post.title %><br>
+  <% end %>
+</div>
