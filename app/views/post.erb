@@ -1,21 +1,23 @@
 <article>
-<div class="post-header">
-  <h2><%= @post.title %></h2>
-  <h4><a href="/user/<%= @post.user.id %>"><%= @post.user.name %></a> <small><%= date(@post.created_at) %></small> 
+  <div class="post-header">
+    <h2><%= @post.title %></h2>
+    <h4><a href="/user/<%= @post.user.id %>"><%= @post.user.name %></a> <small><%= date(@post.created_at) %></small> 
 
-    <% if @post.post_id %><a href="/post/<%= @post.post_id %>">Parent</a><% end %>
+      <% if @post.post_id %><a href="/post/<%= @post.post_id %>">Parent</a><% end %>
 
-  </h4>
-</div>
+    </h4>
+  </div>
 
-<div class="post-body">
-  <p><%= post_body %></p>
-</div>
+  <div class="post-body">
+    <p><%= post_body %></p>
+  </div>
 </article>
 <div class="post-comments">
   <ul>
     <% @comments.each do |comment| %>
+    <div class='comment' id='comment_id_<%= comment.id %>'>
       <li><%= partial :_comment, :comment => comment %></li>
+    </div>
     <% end %>
   </ul>
 </div>
