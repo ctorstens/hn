@@ -1,6 +1,7 @@
-<div class="container">
-  <h1>Hello</h1>
+
+<div class="main">
   <% @posts.each_with_index do |post, index| %>
-    <%=index+1%>.<%= post.title %><br>
+    <div class="post-title"> <a href="/post/<%= post.id %>"><%= post.title %></a> </div>
+    <div class="post-info"><a href="/user/<%= post.user.id %>"><%= post.user.name%></a> <small><%= date(post.created_at) %></small></div>
   <% end %>
 </div>

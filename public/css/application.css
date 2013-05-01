@@ -1,14 +1,57 @@
 .container {
-  margin: 20px auto;
+  margin: 50px auto 0;
   width: 600px;
-  padding: 0px 20px 20px 20px;
-  border: 1px dotted black;
+  clear: both;
+  border: 1px solid;
 }
 th {
   text-align: left;
 }
 
-header h1 {
+
+.nav {
+  background-color: #222;
+  height: 40px;  
+}
+
+#title {
+  float: left;
+}
+#title h1 {
   margin: 0;
   padding: 0;
+  color: white;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+.navlist{
+  position: relative;
+  float: right;
+  margin: 0;
+  padding: 0;
+  line-height: 40px;
+
+}
+.navlist li {
+  display: inline;
+}
+.navlist a{
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.main{
+  padding: 0px 20px 20px 20px;
+}
+
+
+/* Post format */
+.post-title{
+  padding-bottom: 5px;
+  font-size: 1.5em;
+}
+.post-info{
+  padding-bottom: 15px;
 }
