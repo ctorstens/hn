@@ -4,6 +4,7 @@ helpers do
     erb(template, :layout => false, :locals => locals)
   end
 
+  #TODO: Format date properly
   def date(date)
     date.strftime("%Y/%M/%D %I:%M%p")
   end

@@ -1,3 +1,7 @@
+body {
+    background-color: #D6C7B7;
+}
+
 .container {
   margin: 50px auto 0;
   width: 600px;
@@ -18,8 +22,9 @@ h6 {
 
 
 .nav {
-  background-color: #222;
+  background-color: #B4614F;
   height: 40px;  
+  font-family: 'Nosifer', cursive;
 }
 
 #title {
@@ -47,6 +52,7 @@ h6 {
 }
 .navlist li {
   display: inline;
+  padding-right: 20px;
 }
 .navlist a{
   color: white;
@@ -109,7 +115,7 @@ h6 {
 
 /* new post */
 .new-post{
-  background-color: #222;
+  background-color: #D6C7B7;
   border-radius: 4px;
   padding: 10px 0 10px 0;
   /*display: none;*/
