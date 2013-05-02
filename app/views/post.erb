@@ -14,7 +14,7 @@
     <p><%= post_body %></p>
   </div>
 </article>
-<div class="post-comments">
+<div class="post-comments comments">
   <ul>
     <% @comments.each do |comment| %>
     <li><%= partial :_comment, :comment => comment %></li>

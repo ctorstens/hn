@@ -142,3 +142,7 @@ h6 {
   margin: 0 auto;
   display: block;
 }
+
+.comments li, .comments ul {
+  list-style-type: none;
+}
