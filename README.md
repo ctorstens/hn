@@ -36,7 +36,7 @@
      - AJAX stuff
 
 
-  - Sort posts/comments by votes
+  - Sort posts/comgitments by votes
 
 
 
@@ -48,3 +48,7 @@
 - pagination of some sort
 - Tron Theme (easter egg?)
 - error handling
+
+## References
+
+- [colourlovers: San_Francisco](http://www.colourlovers.com/palette/576743/San_Francisco)
