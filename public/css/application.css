@@ -24,7 +24,8 @@ h6 {
 .nav {
   background-color: #B4614F;
   height: 40px;  
-  font-family: 'Nosifer', cursive;
+  /*font-family: 'Nosifer', cursive;*/
+  font-family: 'Orbitron', sans-serif;
 }
 
 #title {
