@@ -1,4 +1,6 @@
 <article>
+  <!-- <div class='post-voter' id='<%= @post.id %>'></div> -->
+  <%= partial :_voter, :item => @post %>
   <div class="post-header">
     <h2><%= @post.title %></h2>
     <h4><a href="/user/<%= @post.user.id %>"><%= @post.user.name %></a> <small><%= date(@post.created_at) %></small> 
@@ -15,9 +17,7 @@
 <div class="post-comments">
   <ul>
     <% @comments.each do |comment| %>
-    <div class='comment' id='comment_id_<%= comment.id %>'>
       <li><%= partial :_comment, :comment => comment %></li>
-    </div>
     <% end %>
   </ul>
 </div>

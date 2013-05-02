@@ -1,4 +1,6 @@
 <article>
+<!-- <div class='comment-voter' id='<%= comment.id %>'></div> -->
+<%= partial :_voter, :item => comment %>
 <div class="comment-header">
   <h4><a href="/user/<%= comment.user.id %>"><%= comment.user.name %></a> <small><%= date(comment.created_at) %></small></h4>
 </div>
