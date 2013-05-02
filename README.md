@@ -42,3 +42,5 @@
 - author_id instead of user_id on post
 - ability to comment on comment (either directly, or go to comment link to submit)
 - pagination of some sort
+- Tron Theme (easter egg?)
+- error handling
