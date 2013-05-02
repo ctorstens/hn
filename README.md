@@ -27,13 +27,18 @@
 
   - update seed file with votes
   - on each post adding up & down arrows to vote
+    
+    <!-- <p><%= item.post_value %></p> -->
+
+
     When someone clicks an up vote button:
-      Vote.create(value: 1, post_id: $(this).parent.find('#post').attr('id'), user_id: session[:user_id])
+      Vote.create(value: 1, post_id: $(this).parent.find('.comment').attr('id'), user_id: session[:user_id])
 
 
 
 
 #### Someday / Maybe
+- admins can up vote as much as they'd like. as much. as they'd like.
 - author_id instead of user_id on post
 - ability to comment on comment (either directly, or go to comment link to submit)
 - pagination of some sort
