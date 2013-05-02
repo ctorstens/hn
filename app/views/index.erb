@@ -1,7 +1,8 @@
-
 <div class="main">
-  <% @posts.each_with_index do |post, index| %>
+  <% @posts.each do |post| %>
+    <%= partial :_voter, :item => post %>
     <div class="post-title"> <a href="/post/<%= post.id %>"><%= post.title %></a> </div>
     <div class="post-info"><a href="/user/<%= post.user.id %>"><%= post.user.name%></a> <small><%= date(post.created_at) %></small></div>
+    <br>
   <% end %>
 </div>

@@ -1,6 +1,7 @@
 get '/post/:id' do
   @post = Post.find(params[:id])
-  @comments = @post.comments
+  @comments = sorted(@post.comments)
+  # @comments = @post.comments
   erb :post
 end
 
